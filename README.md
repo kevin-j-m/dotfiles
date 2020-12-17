@@ -8,6 +8,10 @@ Check for the latest [install](https://brew.sh) instructions.
 
 # Install dependencies
 
+```sh
+./install.sh
+```
+
 # Install oh-my-zsh
 
 Check for the latest [install](https://ohmyz.sh) instructions.
