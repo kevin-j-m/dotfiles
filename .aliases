@@ -1,0 +1,8 @@
+alias be="bundle exec"
+alias devbummr="BASE_BRANCH=develop bummr update --all"
+alias exmigrate="mix ecto.migrate && mix ecto.rollback && mix ecto.migrate"
+alias prontor="bundle exec pronto run"
+alias devprontor="bundle exec pronto run -c origin/develop"
+alias remigrate="bundle exec rake db:migrate && bundle exec rake db:migrate:redo && bundle exec rake db:schema:dump db:test:prepare"
+alias testprep="rake db:drop db:create db:schema:load RAILS_ENV=test"
+alias zulip="~/scripts/zulip.sh"
