@@ -1,5 +1,11 @@
 brew bundle
 
+# Finish fzf install
+read -p "Do you wish to run the fzf installer (y/n)?" yn
+case $yn in
+  [Yy]* ) $(brew --prefix)/opt/fzf/install;;
+esac
+
 # Symlink terminal config
 ln -sv "$PWD/.aliases" "$HOME"
 ln -sv "$PWD/.zshrc" "$HOME"

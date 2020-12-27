@@ -69,3 +69,5 @@ export EDITOR='nvim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 source $HOME/.aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

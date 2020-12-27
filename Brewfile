@@ -11,6 +11,11 @@ brew "neovim"
 
 # Development Tools
 brew "asdf"
+brew "fzf"
+brew "the_silver_searcher"
+brew "readline"
+brew "cmake"
+brew "ctags"
 
 # Browsers
 cask "google-chrome"
