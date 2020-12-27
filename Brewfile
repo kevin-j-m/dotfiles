@@ -17,6 +17,10 @@ brew "readline"
 brew "cmake"
 brew "ctags"
 
+# Containerization
+brew "docker"
+brew "docker-compose"
+
 # Browsers
 cask "google-chrome"
 cask "firefox"
