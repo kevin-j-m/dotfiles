@@ -1,0 +1,133 @@
+if &compatible
+  set nocompatible
+end
+
+" Remove declared plugins
+function! s:UnPlug(plug_name)
+  if has_key(g:plugs, a:plug_name)
+    call remove(g:plugs, a:plug_name)
+  endif
+endfunction
+command!  -nargs=1 UnPlug call s:UnPlug(<args>)
+
+let g:has_async = v:version >= 800 || has('nvim')
+
+call plug#begin('~/.vim/bundle')
+
+" Show git diff on the left
+Plug 'airblade/vim-gitgutter'
+
+" Solarized color scheme
+Plug 'altercation/vim-colors-solarized'
+
+" Status line at bottom (mode, git branch, file type, position)
+Plug 'bling/vim-airline'
+
+" Run a command via an interactive shell
+Plug 'christoomey/vim-run-interactive'
+
+" Run tests from the editor
+Plug 'janko-m/vim-test'
+
+" Fuzzy finder - trial replacing with fzf
+" Plug 'ctrlpvim/ctrlp.vim'
+
+" Create non-existent directories
+Plug 'pbrisbin/vim-mkdir'
+
+" Silver Searcher plugin
+Plug 'rking/ag.vim'
+
+" Tree file explorer
+Plug 'scrooloose/nerdtree'
+
+" Syntax checking
+Plug 'scrooloose/syntastic'
+
+" Slim syntax highlighting
+Plug 'slim-template/vim-slim'
+
+" Running rspec tests - replace with vim-test
+" Plug 'thoughtbot/vim-rspec'
+
+" Bundler commands and highlighing
+Plug 'tpope/vim-bundler'
+
+" Comment out sections
+Plug 'tpope/vim-commentary'
+
+" Async tasks
+" Plug 'tpope/vim-dispatch'
+
+" Automatically add ending statements
+Plug 'tpope/vim-endwise'
+
+" Unix commands
+" Plug 'tpope/vim-eunuch'
+
+" Git integration
+Plug 'tpope/vim-fugitive'
+
+" Ruby on Rails navigation and support
+Plug 'tpope/vim-rails'
+
+" Mappings for surrounding pairs
+Plug 'tpope/vim-surround'
+
+" Syntax highlighting, indendation, etc
+Plug 'vim-ruby/vim-ruby'
+
+" Allow % to match multiple characters
+Plug 'vim-scripts/matchit.zip'
+
+" tmux interaction
+" Plug 'benmills/vimux'
+
+" Mappings for HTML, eRuby, XML, etc
+Plug 'tpope/vim-ragtag'
+
+" Auto reload files written on disk
+Plug 'djoshea/vim-autoread'
+
+" Editorconfig plugin
+" Plug 'editorconfig/editorconfig-vim'
+
+" Elixir syntax highlighting
+Plug 'elixir-editors/vim-elixir'
+
+" Elixir completion and integration
+Plug 'slashmili/alchemist.vim'
+
+" Elixir formatter async runner
+Plug 'mhinz/vim-mix-format'
+
+" Fuzzy finder
+Plug 'junegunn/fzf.vim'
+
+" Go language support
+Plug 'fatih/vim-go'
+
+" Javascript syntax highlighting/integration
+Plug 'pangloss/vim-javascript'
+
+" Granular project config
+Plug 'tpope/vim-projectionist'
+
+" Ruby rake integrations
+Plug 'tpope/vim-rake'
+
+" Use . with plugins
+Plug 'tpope/vim-repeat'
+
+" hub integration with git
+Plug 'tpope/vim-rhubarb'
+
+" Comment out sections
+" Plug 'vim-scripts/tComment'
+
+if g:has_async
+  " Linting and LSP client
+  Plug 'dense-analysis/ale'
+endif
+
+call plug#end()
