@@ -126,6 +126,9 @@ Plug 'tpope/vim-rhubarb'
 " Comment out sections
 " Plug 'vim-scripts/tComment'
 
+" neovim terminal utilities
+Plug 'vimlab/split-term.vim'
+
 if g:has_async
   " Linting and LSP client
   Plug 'dense-analysis/ale'

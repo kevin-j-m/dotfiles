@@ -201,7 +201,7 @@ set diffopt+=vertical
 if has("gui_running")
   let test#strategy = "iterm"
 else
-  let test#strategy = "vimux"
+  let test#strategy = "neovim"
 end
 let g:test#preserve_screen = 1
 
@@ -228,6 +228,9 @@ nnoremap <leader>ri :RunInInteractiveShell<space>
 
 " Key mappings
 " :inoremap ii <Esc>
+
+" split term mappings
+nmap <silent> <leader>f :10Term<CR>
 
 " Run elixir formatter on save
 let g:mix_format_on_save = 1
