@@ -15,7 +15,7 @@ ZSH_THEME="miloshadzic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
-  asdf
+  # asdf
   brew
   bundler
   # chruby
@@ -30,6 +30,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:$PATH"
 PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
 unsetopt nomatch
+
+# asdf configuration
+. /usr/local/opt/asdf/asdf.sh
 
 # rbenv configuration
 # export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
@@ -91,3 +94,10 @@ timezshplugin() {
     echo $elapsed":" $plugin
   done
 }
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
