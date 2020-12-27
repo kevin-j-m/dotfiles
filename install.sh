@@ -26,3 +26,15 @@ ln -sv "$PWD/init.vim" "$HOME/.config/nvim"
 # Symlink git config
 ln -sv "$PWD/.gitconfig" "$HOME"
 ln -sv "$PWD/.gitmessage" "$HOME"
+
+# asdf config
+ln -sv "$PWD/.asdfrc" "$HOME"
+ln -sv "$PWD/.tool-versions" "$HOME"
+
+# set deployment target for erlang
+# remove when targeting a more modern erlang release
+export MACOSX_DEPLOYMENT_TARGET=10.0
+asdf plugin add ruby
+asdf plugin add elixir
+asdf plugin add erlang
+(cd ~; asdf install)
