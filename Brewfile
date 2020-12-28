@@ -23,6 +23,7 @@ brew "hugo"
 brew "jq"
 brew "yarn"
 brew "postgresql"
+brew "graphviz"
 
 # Deployment platforms
 brew "aws-elasticbeanstalk"
