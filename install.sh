@@ -29,6 +29,9 @@ ln -sv "$PWD/init.vim" "$HOME/.config/nvim"
 # Symlink git config
 ln -sv "$PWD/.gitconfig" "$HOME"
 ln -sv "$PWD/.gitmessage" "$HOME"
+ln -sv "$PWD/.gitattributes" "$HOME"
+
+git config --global core.attributesfile ~/.gitattributes
 
 # asdf config
 ln -sv "$PWD/.asdfrc" "$HOME"

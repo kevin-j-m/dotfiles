@@ -18,6 +18,7 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+	attributesfile = /Users/kevin/.gitattributes
 [merge]
   ff = only
 [commit]
@@ -37,3 +38,5 @@
   helper = osxkeychain
 [init]
   defaultBranch = main
+[diff "rspec"]
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario|background)[ \t].*)$"

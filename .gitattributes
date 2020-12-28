@@ -1,0 +1,9 @@
+*.css      diff=css
+*.html     diff=html
+*.ex       diff=elixir
+*.exs      diff=elixir
+*.go       diff=golang
+*.md       diff=markdown
+*.rb       diff=ruby
+*_spec.rb  diff=rspec
+*.rake     diff=ruby
