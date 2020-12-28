@@ -22,6 +22,7 @@ brew "ctags"
 brew "hugo"
 brew "jq"
 brew "yarn"
+brew "postgresql"
 
 # Deployment platforms
 brew "aws-elasticbeanstalk"
