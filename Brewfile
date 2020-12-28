@@ -27,7 +27,7 @@ brew "yarn"
 brew "aws-elasticbeanstalk"
 
 # Containerization
-brew "docker"
+cask "docker"
 brew "docker-compose"
 
 # Browsers

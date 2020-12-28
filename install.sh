@@ -6,6 +6,9 @@ case $yn in
   [Yy]* ) $(brew --prefix)/opt/fzf/install;;
 esac
 
+# Symlink brewfile
+ln -sv "$PWD/Brewfile" "$HOME"
+
 # Symlink terminal config
 ln -sv "$PWD/.aliases" "$HOME"
 ln -sv "$PWD/.zshrc" "$HOME"
