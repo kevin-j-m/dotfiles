@@ -17,6 +17,9 @@ brew "readline"
 brew "cmake"
 brew "ctags"
 
+# Deployment platforms
+brew "aws-elasticbeanstalk"
+
 # Containerization
 brew "docker"
 brew "docker-compose"
