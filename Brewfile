@@ -28,3 +28,14 @@ cask "chromedriver"
 
 # macOS Window Management
 cask "spectacle"
+
+# media
+cask "clementine"
+cask "vlc"
+
+# mac app store
+brew "mas"
+mas "Wimoweh", id: 610341008
+mas "Skitch", id: 425955336
+mas "GIPHY CAPTURE", id: 668208984
+mas "Slack", id: 803453959
