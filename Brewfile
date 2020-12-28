@@ -1,6 +1,8 @@
 # Terminal
 brew "zsh"
 cask "iterm2"
+brew "p7zip"
+brew "wget"
 
 # SCM
 brew "git"
@@ -8,6 +10,7 @@ brew "hub"
 
 # Editor
 brew "neovim"
+cask "visual-studio-code"
 
 # Development Tools
 brew "asdf"
@@ -16,6 +19,9 @@ brew "the_silver_searcher"
 brew "readline"
 brew "cmake"
 brew "ctags"
+brew "hugo"
+brew "jq"
+brew "yarn"
 
 # Deployment platforms
 brew "aws-elasticbeanstalk"
@@ -35,6 +41,8 @@ cask "spectacle"
 # media
 cask "clementine"
 cask "vlc"
+brew "ffmpeg"
+cask "soundflower"
 
 # mac app store
 brew "mas"
