@@ -29,8 +29,8 @@ Plug 'christoomey/vim-run-interactive'
 " Run tests from the editor
 Plug 'janko-m/vim-test'
 
-" Fuzzy finder - trial replacing with fzf
-" Plug 'ctrlpvim/ctrlp.vim'
+" Consistent terminal
+Plug 'kassio/neoterm'
 
 " Create non-existent directories
 Plug 'pbrisbin/vim-mkdir'
@@ -47,23 +47,14 @@ Plug 'scrooloose/syntastic'
 " Slim syntax highlighting
 Plug 'slim-template/vim-slim'
 
-" Running rspec tests - replace with vim-test
-" Plug 'thoughtbot/vim-rspec'
-
 " Bundler commands and highlighing
 Plug 'tpope/vim-bundler'
 
 " Comment out sections
 Plug 'tpope/vim-commentary'
 
-" Async tasks
-" Plug 'tpope/vim-dispatch'
-
 " Automatically add ending statements
 Plug 'tpope/vim-endwise'
-
-" Unix commands
-" Plug 'tpope/vim-eunuch'
 
 " Git integration
 Plug 'tpope/vim-fugitive'
@@ -80,17 +71,11 @@ Plug 'vim-ruby/vim-ruby'
 " Allow % to match multiple characters
 Plug 'vim-scripts/matchit.zip'
 
-" tmux interaction
-" Plug 'benmills/vimux'
-
 " Mappings for HTML, eRuby, XML, etc
 Plug 'tpope/vim-ragtag'
 
 " Auto reload files written on disk
 Plug 'djoshea/vim-autoread'
-
-" Editorconfig plugin
-" Plug 'editorconfig/editorconfig-vim'
 
 " Elixir syntax highlighting
 Plug 'elixir-editors/vim-elixir'
@@ -123,11 +108,29 @@ Plug 'tpope/vim-repeat'
 " hub integration with git
 Plug 'tpope/vim-rhubarb'
 
-" Comment out sections
-" Plug 'vim-scripts/tComment'
-
 " neovim terminal utilities
 Plug 'vimlab/split-term.vim'
+
+" Fuzzy finder - trial replacing with fzf
+" Plug 'ctrlpvim/ctrlp.vim'
+
+" Comment out sections
+" Plug 'vim-scripts/tComment'
+"
+" Editorconfig plugin
+" Plug 'editorconfig/editorconfig-vim'
+
+" tmux interaction
+" Plug 'benmills/vimux'
+
+" Async tasks
+" Plug 'tpope/vim-dispatch'
+
+" Unix commands
+" Plug 'tpope/vim-eunuch'
+
+" Running rspec tests - replace with vim-test
+" Plug 'thoughtbot/vim-rspec'
 
 if g:has_async
   " Linting and LSP client

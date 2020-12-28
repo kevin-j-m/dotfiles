@@ -203,10 +203,17 @@ endif
 " Use iTerm to execute test commands
 if has("gui_running")
   let test#strategy = "iterm"
+  let g:test#preserve_screen = 1
 else
-  let test#strategy = "neovim"
+  let test#strategy = "neoterm"
+  let g:neoterm_default_mod = "botright"
+  let g:neoterm_keep_term_open = 0  " when buffer closes, exit the terminal too.
+  let g:neoterm_autoscroll = 1      " autoscroll to the bottom when entering insert mode
+  let g:neoterm_size = 10
+
+  " let test#strategy = "neovim"
+  " let test#neovim#term_position = "botright 10"
 end
-let g:test#preserve_screen = 1
 
 " RSpec.vim mappings
 " map <Leader>t :call RunCurrentSpecFile()<CR>
@@ -216,6 +223,7 @@ let g:test#preserve_screen = 1
 
 " vim-test mappings
 nmap <silent> <leader>r :TestNearest<CR>
+nmap <silent> <leader>rr :Tclose<CR>
 nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
