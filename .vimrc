@@ -250,3 +250,6 @@ let g:mix_format_silent_errors = 1
 
 " Go formatter
 let g:go_fmt_command = "gofmt"
+
+set mouse=a
+set clipboard=unnamed
