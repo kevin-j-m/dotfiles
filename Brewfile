@@ -46,6 +46,9 @@ cask "vlc"
 brew "ffmpeg"
 cask "soundflower"
 
+# local password storage
+cask "keepassx"
+
 # mac app store
 brew "mas"
 mas "Wimoweh", id: 610341008
