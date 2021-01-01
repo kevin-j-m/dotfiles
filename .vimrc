@@ -253,3 +253,5 @@ let g:go_fmt_command = "gofmt"
 
 set mouse=a
 set clipboard=unnamed
+
+set nohlsearch
