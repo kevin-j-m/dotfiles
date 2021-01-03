@@ -1,6 +1,7 @@
 # Terminal
 brew "zsh"
 cask "iterm2"
+cask "kitty"
 brew "p7zip"
 brew "wget"
 
