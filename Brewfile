@@ -24,6 +24,7 @@ brew "hugo"
 brew "jq"
 brew "yarn"
 brew "postgresql"
+brew "mysql"
 brew "graphviz"
 
 # Deployment platforms
