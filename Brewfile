@@ -38,6 +38,7 @@ brew "docker-compose"
 cask "google-chrome"
 cask "firefox"
 cask "chromedriver"
+cask "firefox-developer-edition"
 
 # macOS Window Management
 cask "spectacle"
