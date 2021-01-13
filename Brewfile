@@ -48,6 +48,7 @@ cask "clementine"
 cask "vlc"
 brew "ffmpeg"
 cask "soundflower"
+cask "imageoptim"
 
 # local password storage
 cask "keepassx"
