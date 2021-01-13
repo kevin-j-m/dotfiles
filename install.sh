@@ -33,6 +33,7 @@ ln -sv "$PWD/init.vim" "$HOME/.config/nvim"
 ln -sv "$PWD/.gitconfig" "$HOME"
 ln -sv "$PWD/.gitmessage" "$HOME"
 ln -sv "$PWD/.gitattributes" "$HOME"
+ln -sv "$PWD/.gitignore" "$HOME"
 
 git config --global core.attributesfile ~/.gitattributes
 
