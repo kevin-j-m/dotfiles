@@ -53,6 +53,9 @@ cask "imageoptim"
 # local password storage
 cask "keepassx"
 
+# PDF Interpreter
+brew "ghostscript"
+
 # mac app store
 brew "mas"
 mas "Wimoweh", id: 610341008
