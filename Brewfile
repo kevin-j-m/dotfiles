@@ -26,6 +26,8 @@ brew "yarn"
 brew "postgresql"
 brew "mysql"
 brew "graphviz"
+tap "heroku/brew"
+brew "heroku"
 
 # Deployment platforms
 brew "aws-elasticbeanstalk"
