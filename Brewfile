@@ -58,6 +58,9 @@ cask "keepassx"
 # PDF Interpreter
 brew "ghostscript"
 
+# Communication
+cask "discord"
+
 # mac app store
 brew "mas"
 mas "Wimoweh", id: 610341008
