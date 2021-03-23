@@ -252,6 +252,13 @@ let g:mix_format_silent_errors = 1
 " Go formatter
 let g:go_fmt_command = "gofmt"
 
+" Spell checking
+set spellfile=$HOME/.vim-spell-en.utf-8.add
+autocmd BufRead,BufNewFile *.md setlocal spell
+
+" Autocomplete with dictionary words when spell check is on
+set complete+=kspell
+
 set mouse=a
 set clipboard=unnamed
 
