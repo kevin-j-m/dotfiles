@@ -28,6 +28,7 @@ brew "mysql"
 brew "graphviz"
 tap "heroku/brew"
 brew "heroku"
+cask "ngrok"
 
 # Deployment platforms
 brew "aws-elasticbeanstalk"
