@@ -11,6 +11,7 @@
   give = "!git push origin $(git branch-name)"
   lo = log --decorate --all -20 --pretty=format:'%C(auto)%h <%an>%d %s (%cr)%Creset' --abbrev-commit --date=short --branches
   pf = push --force-with-lease
+  recent = branch --sort=-committerdate --format="%(committerdate:relative)%09%(refname:short)"
   ri = rebase -i
   st = status
 [color]
