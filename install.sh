@@ -45,6 +45,7 @@ ln -sv "$PWD/.tool-versions" "$HOME"
 # remove when targeting a more modern erlang release
 export MACOSX_DEPLOYMENT_TARGET=10.0
 asdf plugin add ruby
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git 
 asdf plugin add elixir
 asdf plugin add erlang
 (cd ~; asdf install)
