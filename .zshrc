@@ -43,6 +43,9 @@ unsetopt nomatch
 # source /usr/local/share/chruby/chruby.sh
 # source /usr/local/share/chruby/auto.sh
 
+# GPG setup
+export GPG_TTY=$(tty)
+
 # Golang configuration
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
