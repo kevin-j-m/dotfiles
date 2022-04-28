@@ -32,7 +32,7 @@ PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
 unsetopt nomatch
 
 # asdf configuration
-. /usr/local/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # rbenv configuration
 # export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
@@ -104,3 +104,4 @@ if type brew &>/dev/null; then
   autoload -Uz compinit
   compinit
 fi
+
