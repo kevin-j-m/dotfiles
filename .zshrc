@@ -105,3 +105,4 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+source "${HOME}/.zshrc.local"
