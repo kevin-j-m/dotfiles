@@ -115,7 +115,7 @@ Plug 'vimlab/split-term.vim'
 Plug 'christoomey/vim-tmux-runner'
 
 " neovim direnv integration
-" Plug 'direnv/direnv.vim'
+Plug 'direnv/direnv.vim'
 
 " Fuzzy finder - trial replacing with fzf
 " Plug 'ctrlpvim/ctrlp.vim'
