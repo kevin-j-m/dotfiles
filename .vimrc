@@ -209,13 +209,17 @@ else
   let test#strategy = "kitty"
   " let test#strategy = "neoterm"
   " let g:neoterm_default_mod = "botright"
-  " let g:neoterm_keep_term_open = 1  " when buffer closes, exit the terminal too.
+  " let g:neoterm_keep_term_open = 0  " when buffer closes, exit the terminal too.
   " let g:neoterm_autoscroll = 1      " autoscroll to the bottom when entering insert mode
   " let g:neoterm_size = 10
 
-  " let test#strategy = "neovim"
-  " let test#neovim#term_position = "botright 10"
+  let test#strategy = "neovim"
+  let test#neovim#term_position = "botright 10"
 end
+
+" direnv
+" ======
+" let g:direnv_auto = 1
 
 " RSpec.vim mappings
 " map <Leader>t :call RunCurrentSpecFile()<CR>
