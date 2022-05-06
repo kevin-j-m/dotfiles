@@ -22,6 +22,7 @@ plugins=(
   gem
   git
   ruby
+  rails
 )
 
 source $ZSH/oh-my-zsh.sh
