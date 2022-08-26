@@ -32,7 +32,12 @@ PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
 unsetopt nomatch
 
 # asdf configuration
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+# set one of these in ~/.zshrc.local
+#
+# Intel Mac OS
+# . /usr/local/opt/asdf/asdf.sh
+# M1
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # rbenv configuration
 # export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
