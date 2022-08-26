@@ -111,6 +111,9 @@ Plug 'tpope/vim-rhubarb'
 " neovim terminal utilities
 Plug 'vimlab/split-term.vim'
 
+" send input to tmux
+Plug 'christoomey/vim-tmux-runner'
+
 " Fuzzy finder - trial replacing with fzf
 " Plug 'ctrlpvim/ctrlp.vim'
 
