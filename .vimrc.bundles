@@ -117,6 +117,9 @@ Plug 'christoomey/vim-tmux-runner'
 " neovim direnv integration
 Plug 'direnv/direnv.vim'
 
+" clojure repl
+Plug 'tpope/vim-fireplace'
+
 " Fuzzy finder - trial replacing with fzf
 " Plug 'ctrlpvim/ctrlp.vim'
 
