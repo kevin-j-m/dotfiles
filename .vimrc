@@ -309,8 +309,13 @@ require('telescope').setup{
         ["<C-j>"] = "move_selection_next",
         ["<C-k>"] = "move_selection_previous",
       }
-    }
-  }
+    },
+    layout_config = {
+      horizontal = {
+        preview_cutoff = 0,
+      },
+    },
+  },
 }
 
 -- To get fzf loaded and working with telescope, you need to call
