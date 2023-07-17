@@ -12,6 +12,7 @@ brew "hub"
 # Editor
 brew "neovim"
 cask "visual-studio-code"
+brew "ripgrep" # for telescope live_grep
 
 # Development Tools
 brew "asdf"

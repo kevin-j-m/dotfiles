@@ -260,6 +260,21 @@ nnoremap <leader>ri :RunInInteractiveShell<space>
 " split term mappings
 nmap <silent> <leader>f :10Term<CR>
 
+" vim-fugitive Git mappings
+nnoremap <leader>gb <cmd>Git blame<cr>
+
+" Telescope mappings
+nnoremap <leader>ff <cmd>Telescope find_files hidden=true<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fgg <cmd>Telescope git_commits<cr>
+nnoremap <leader>fgs <cmd>Telescope git_status<cr>
+nnoremap <leader>fgb <cmd>Telescope git_bcommits<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" File Explorer
+nnoremap <leader>b <cmd>NERDTree<cr>
+
 " Run elixir formatter on save
 let g:mix_format_on_save = 1
 let g:mix_format_options = '--check-equivalent'
@@ -279,3 +294,26 @@ set mouse=a
 set clipboard=unnamed
 
 set nohlsearch
+
+" Telescope Setup
+lua << EOF
+require('telescope').setup{
+  defaults = {
+    -- Default configuration for telescope goes here:
+    -- config_key = value,
+    mappings = {
+      i = {
+        -- map actions.which_key to <C-h> (default: <C-/>)
+        -- actions.which_key shows the mappings for your picker,
+        -- e.g. git_{create, delete, ...}_branch for the git_branches picker
+        ["<C-j>"] = "move_selection_next",
+        ["<C-k>"] = "move_selection_previous",
+      }
+    }
+  }
+}
+
+-- To get fzf loaded and working with telescope, you need to call
+-- load_extension, somewhere after setup function:
+require('telescope').load_extension('fzf')
+EOF
