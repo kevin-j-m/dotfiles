@@ -274,7 +274,9 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " File Explorer
 " nnoremap <leader>b <cmd>NERDTree<cr>
-nnoremap <leader>b <cmd>NvimTreeOpen<cr>
+nnoremap <leader>bb <cmd>NvimTreeToggle<cr>
+nnoremap <leader>bf <cmd>NvimTreeFindFile<cr>
+nnoremap <leader>bc <cmd>NvimTreeCollapse<cr>
 
 " Run elixir formatter on save
 let g:mix_format_on_save = 1
