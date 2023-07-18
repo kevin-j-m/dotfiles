@@ -64,6 +64,10 @@ brew "ghostscript"
 # Communication
 cask "discord"
 
+# Fonts
+tap "homebrew/cask-fonts"
+cask "font-symbols-only-nerd-font"
+
 # mac app store
 brew "mas"
 mas "Wimoweh", id: 610341008

@@ -39,7 +39,9 @@ Plug 'pbrisbin/vim-mkdir'
 Plug 'rking/ag.vim'
 
 " Tree file explorer
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
 
 " Syntax checking
 Plug 'scrooloose/syntastic'

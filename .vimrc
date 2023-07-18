@@ -273,7 +273,8 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " File Explorer
-nnoremap <leader>b <cmd>NERDTree<cr>
+" nnoremap <leader>b <cmd>NERDTree<cr>
+nnoremap <leader>b <cmd>NvimTreeOpen<cr>
 
 " Run elixir formatter on save
 let g:mix_format_on_save = 1
@@ -297,6 +298,41 @@ set nohlsearch
 
 " Telescope Setup
 lua << EOF
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+-- vim.opt.termguicolors = true
+
+require('nvim-web-devicons').setup {
+ -- your personal icons can go here (to override)
+ -- you can specify color or cterm_color instead of specifying both of them
+ -- DevIcon will be appended to `name`
+ -- Found icon at https://www.nerdfonts.com/cheat-sheet
+ override = {
+  rb = {
+    icon = "󰴭",
+    color = "#701516",
+    cterm_color = "52",
+    name = "Rb"
+  }
+ };
+}
+
+-- empty setup using defaults
+require("nvim-tree").setup({
+  renderer = {
+    icons = {
+      glyphs = {
+        folder = {
+          arrow_closed = "",
+        }
+      }
+    }
+  }
+})
+
 require('telescope').setup{
   defaults = {
     -- Default configuration for telescope goes here:
