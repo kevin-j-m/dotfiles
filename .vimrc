@@ -228,6 +228,8 @@ else
   " endif
 end
 
+let test#javascript#jest#file_pattern = '\v(__tests__/.*|(spec|test))\.(js|jsx|coffee|ts|tsx|es6)$'
+
 " direnv
 " ======
 " let g:direnv_auto = 1
