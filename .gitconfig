@@ -22,6 +22,7 @@
 	attributesfile = /Users/kevin/.gitattributes
 [merge]
   ff = only
+  conflictStyle = zdiff3
 [commit]
   template = ~/.gitmessage
 [fetch]
@@ -30,6 +31,7 @@
   autosquash = true
 [diff]
   colorMoved = zebra
+  algorithm = histogram
 [pager]
   branch = cat
 [user]
