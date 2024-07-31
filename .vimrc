@@ -101,9 +101,14 @@ if v:version > 703
 endif
 
 " Colorscheme
-set background=dark
-let g:solarized_termtrans = 1
-colorscheme solarized
+lua << EOF
+  require('neosolarized').setup({
+    comment_italics = true,
+    background_set = false,
+  })
+EOF
+
+colorscheme neosolarized
 highlight ColorColumn ctermbg=DarkCyan
 set guifont=Mnlo\ Regular:h14
 
