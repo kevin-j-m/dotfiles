@@ -112,6 +112,10 @@ colorscheme neosolarized
 highlight ColorColumn ctermbg=DarkCyan
 set guifont=Mnlo\ Regular:h14
 
+" Airline
+" let g:airline_solarized_bg='dark'
+let g:airline_theme='bubblegum'
+
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
   " Use Ag over Grep

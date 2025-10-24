@@ -21,7 +21,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 
 " Status line at bottom (mode, git branch, file type, position)
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Run a command via an interactive shell
 Plug 'christoomey/vim-run-interactive'
