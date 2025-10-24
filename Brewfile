@@ -54,6 +54,7 @@ cask "vlc"
 brew "ffmpeg"
 cask "soundflower"
 cask "imageoptim"
+brew "yt-dlp"
 
 # local password storage
 cask "keepassx"
