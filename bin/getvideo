@@ -1,0 +1,9 @@
+# https://codeberg.org/EvanHahn/dotfiles/src/commit/843b9ee13d949d346a4a73ccee2a99351aed285b/home/bin/bin/getsong
+# https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time/
+
+#!/usr/bin/env bash
+set -e
+set -u
+set -o pipefail
+
+exec yt-dlp -t mp4 -o '%(title)s.%(ext)s' "$@"
