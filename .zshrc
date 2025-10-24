@@ -30,6 +30,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export PATH="/opt/homebrew/bin:/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:$PATH"
 PATH=$PATH:"$HOME/Library/Android/sdk/platform-tools"
+PATH=$PATH:"$HOME/dev/kevin-j-m/dotfiles/bin"
 unsetopt nomatch
 
 # asdf configuration
