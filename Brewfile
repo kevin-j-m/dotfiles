@@ -4,6 +4,7 @@ cask "iterm2"
 cask "kitty"
 brew "p7zip"
 brew "wget"
+brew "tldr"
 
 # SCM
 brew "git"
