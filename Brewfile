@@ -44,16 +44,14 @@ brew "docker-compose"
 cask "google-chrome"
 cask "firefox"
 cask "chromedriver"
-cask "firefox-developer-edition"
 
 # macOS Window Management
-cask "spectacle"
+cask "rectangle"
 
 # media
 cask "clementine"
 cask "vlc"
 brew "ffmpeg"
-cask "soundflower"
 cask "imageoptim"
 brew "yt-dlp"
 
@@ -67,12 +65,10 @@ brew "ghostscript"
 cask "discord"
 
 # Fonts
-tap "homebrew/cask-fonts"
 cask "font-symbols-only-nerd-font"
 
 # mac app store
 brew "mas"
-mas "Wimoweh", id: 610341008
-mas "Skitch", id: 425955336
+mas "Amphetamine", id: 937984704
 mas "GIPHY CAPTURE", id: 668208984
 mas "Slack", id: 803453959
