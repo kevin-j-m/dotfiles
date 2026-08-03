@@ -15,7 +15,7 @@ ZSH_THEME="miloshadzic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
-  # asdf
+  asdf
   brew
   bundler
   # chruby
@@ -40,6 +40,8 @@ unsetopt nomatch
 # . /usr/local/opt/asdf/asdf.sh
 # M1
 # . /opt/homebrew/opt/asdf/libexec/asdf.sh
+# Current
+# export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # rbenv configuration
 # export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
