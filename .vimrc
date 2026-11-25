@@ -86,6 +86,16 @@ augroup ale
   endif
 augroup END
 
+" ALE explicitly runs rubocop/standard only for projects using them.
+" https://www.hardscrabble.net/2023/configuring-ale-to-only-run-rubocop-in-projects-that-use-rubocop/
+" let g:ale_linters_explicit = 1
+let g:ale_linters= {'ruby': ['rubocop', 'standardrb']}
+let g:ale_fixers = {'ruby': ['rubocop', 'standardrb']}
+
+let g:ale_ruby_rubocop_executable = "bin/rubocop"
+let g:ale_ruby_standardrb_executable = "bin/standardrb"
+let g:ale_fix_on_save = 1
+
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
 " shell for syntax highlighting purposes.
 let g:is_posix = 1

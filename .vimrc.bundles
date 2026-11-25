@@ -45,10 +45,10 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 
 " Syntax checking
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 
 " Slim syntax highlighting
-Plug 'slim-template/vim-slim'
+" Plug 'slim-template/vim-slim'
 
 " Bundler commands and highlighing
 Plug 'tpope/vim-bundler'
@@ -69,7 +69,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 
 " Syntax highlighting, indendation, etc
-Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 
 " Allow % to match multiple characters
 Plug 'vim-scripts/matchit.zip'
